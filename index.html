@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary-green: #10B981;
+            --secondary-green: #059669;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <i class="bi bi-box text-2xl text-emerald-500"></i>
+            <span class="font-bold text-xl">Share</span>
+        </div>
+        <button class="bg-emerald-500 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition">
+            Sign Up Free
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    The easiest place to update and share your Connection
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Keep your audience engaged and share your content seamlessly across platforms.
+                </p>
+                <button class="bg-emerald-500 text-white px-8 py-3 rounded-full hover:bg-emerald-600 transition">
+                    Get Started
+                </button>
+            </div>
+            <div class="bg-gray-100 rounded-2xl p-4">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800" 
+                     alt="Dashboard Preview" 
+                     class="rounded-xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+        <div class="bg-gray-50 rounded-2xl p-8">
+            <h3 class="text-2xl font-bold mb-4">Analyze your audience</h3>
+            <p class="text-gray-600 mb-6">
+                Get detailed insights about your followers and keep them engaged with data-driven decisions.
+            </p>
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+                <div class="h-48 bg-emerald-100 rounded-lg mb-4"></div>
+                <div class="space-y-2">
+                    <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                    <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8">
+            <h3 class="text-2xl font-bold mb-4">Share limitless content</h3>
+            <p class="text-gray-600 mb-6">
+                Create and distribute your content across multiple platforms with just a few clicks.
+            </p>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="aspect-square bg-emerald-100 rounded-lg"></div>
+                <div class="aspect-square bg-emerald-200 rounded-lg"></div>
+                <div class="aspect-square bg-emerald-300 rounded-lg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">What our customers say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <p class="text-gray-600 mb-4">"Amazing platform for managing our social presence!"</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-emerald-200 rounded-full"></div>
+                    <div>
+                        <p class="font-semibold">Sarah K.</p>
+                        <p class="text-sm text-gray-500">Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <p class="text-gray-600 mb-4">"Simplified our content management workflow."</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-emerald-200 rounded-full"></div>
+                    <div>
+                        <p class="font-semibold">Mike R.</p>
+                        <p class="text-sm text-gray-500">Content Creator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <p class="text-gray-600 mb-4">"The analytics are incredibly detailed!"</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-emerald-200 rounded-full"></div>
+                    <div>
+                        <p class="font-semibold">Alex M.</p>
+                        <p class="text-sm text-gray-500">Social Media Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">All USA Apps and Integrations</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-instagram text-3xl text-emerald-500"></i>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-twitter text-3xl text-emerald-500"></i>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-facebook text-3xl text-emerald-500"></i>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-linkedin text-3xl text-emerald-500"></i>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-pinterest text-3xl text-emerald-500"></i>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl flex items-center justify-center">
+                <i class="bi bi-youtube text-3xl text-emerald-500"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 mt-16">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="bi bi-box text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-xl">Share</span>
+                    </div>
+                    <p class="text-gray-600">The easiest way to manage and share your content.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>Enterprise</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600">© 2023 Share. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <i class="bi bi-twitter text-gray-400 hover:text-emerald-500 cursor-pointer"></i>
+                    <i class="bi bi-facebook text-gray-400 hover:text-emerald-500 cursor-pointer"></i>
+                    <i class="bi bi-instagram text-gray-400 hover:text-emerald-500 cursor-pointer"></i>
+                    <i class="bi bi-linkedin text-gray-400 hover:text-emerald-500 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
